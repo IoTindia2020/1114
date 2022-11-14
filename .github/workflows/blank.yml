@@ -1,11 +1,11 @@
-name: run-script
-on: push
-
-jobs:
-run:
-runs-on: ubuntu-latest
-steps:
-- uses: actions/checkout@v1
-- name: script
-run: PATH/script.sh
-shell: bash
+on: 
+  push:
+name: Job
+jobs:          
+  build:
+    name: Build
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Run shell
+        run: |
+             echo "Shell commands here"
