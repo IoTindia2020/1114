@@ -4,7 +4,7 @@ name: Job
 jobs:          
   build:
     name: Build
-    runs-on: ubuntu-18.04
+    runs-on: windows-latest
     steps:
       - name: Run shell
         run: |
